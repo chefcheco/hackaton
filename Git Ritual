@@ -9,11 +9,10 @@ WORK FLOW:
 
 1. NEW BRANCH :   $ git checkout -b step-#-feature
 
-2. (work work work):  $ git add .
+2. work
 
-3. “Before merge, get everyone sync!!!” Merge(one by one) : $ git merge
+3. when done, git checkout master --> git merge (nome da branch em que trabalharam) --> git add/git commit ----> git push origin master
 
-4. .... h e l p
 
 
 RESOURCEFULL COMMANDS:
