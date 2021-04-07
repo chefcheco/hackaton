@@ -7,11 +7,19 @@ STARTING GIT:
 
 WORK FLOW:
 
-1. NEW BRANCH :   $ git checkout -b step-#-feature
+1. $ git checkout -b step-#-feature (new branch)
 
-2. work
+2. work, when done -->
 
-3. when done, git checkout master --> git merge (nome da branch em que trabalharam) --> git add/git commit ----> git push origin master
+3. $ git checkout master --> 
+
+4. $ git merge (nome da branch em que trabalharam) --> 
+
+5. $ git add/git commit ----> 
+
+6. $ git push origin master
+
+repeat...
 
 
 
