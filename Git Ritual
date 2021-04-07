@@ -4,10 +4,18 @@ STARTING GIT:
 
 1. clone:   $ git clone https://github.com/Brunompb/FOXTROT.git
 
-2. NEW BRANCH :   $ git checkout -b step-#-feature
 
-3. (work work work):  $ git add .
+WORK FLOW:
 
-4. “Before merge, get everyone sync!!!” Merge(one by one) : $ git merge
+1. NEW BRANCH :   $ git checkout -b step-#-feature
 
-5. .... h e l p
+2. (work work work):  $ git add .
+
+3. “Before merge, get everyone sync!!!” Merge(one by one) : $ git merge
+
+4. .... h e l p
+
+
+RESOURCEFULL COMMANDS:
+
+
