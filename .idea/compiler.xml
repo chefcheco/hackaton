@@ -9,5 +9,8 @@
         <module name="duck-tales" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="duck-tales" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
