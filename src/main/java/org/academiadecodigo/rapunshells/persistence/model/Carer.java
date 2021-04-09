@@ -10,10 +10,11 @@ public class Carer extends AbstractModel {
 
     private String firstName;
     private String lastName;
+    private int age;
     private String email;
     private String phone;
 
-    /*@OneToMany(
+    @OneToOne(
             cascade = {CascadeType.ALL},
 
             orphanRemoval = true,
@@ -23,7 +24,7 @@ public class Carer extends AbstractModel {
             fetch = FetchType.EAGER
     )
 
-    @OneToMany(
+/*    @OneToMany(
             cascade = {CascadeType.ALL},
 
             orphanRemoval = true,
@@ -45,6 +46,14 @@ public class Carer extends AbstractModel {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getEmail() {

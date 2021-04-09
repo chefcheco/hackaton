@@ -14,4 +14,5 @@ public interface CarerService {
     void delete(Integer id) throws AssociationExistsException, CarerNotFoundException;
 
     List<Carer> list();
+
 }
