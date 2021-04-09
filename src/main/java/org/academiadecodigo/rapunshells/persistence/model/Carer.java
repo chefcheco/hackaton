@@ -13,6 +13,24 @@ public class Carer extends AbstractModel {
     private int age;
     private String email;
     private String phone;
+    private int rating;
+    private int serviceCounter;
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public int getServiceCounter() {
+        return serviceCounter;
+    }
+
+    public void setServiceCounter(int serviceCounter) {
+        this.serviceCounter = serviceCounter;
+    }
 
     @OneToOne(
             cascade = {CascadeType.ALL},
@@ -31,6 +49,8 @@ public class Carer extends AbstractModel {
 
             mappedBy = "carer"
     )*/
+
+
 
     public String getFirstName() {
         return firstName;

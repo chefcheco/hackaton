@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
-@ControllerAdvice
+
 public class GlobalControllerExceptionHandler {
 
     @ResponseStatus(HttpStatus.BAD_REQUEST)
