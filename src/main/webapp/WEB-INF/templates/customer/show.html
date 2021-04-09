@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <thymeleaf th:replace="header :: header"/>
+
+    <script>
+    </script>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div th:replace="action :: action"></div>
+
+    <div th:replace="carer/partial/details :: details"></div>
+
+
+    <div class="row">
+        <div class="col-sm-8">
+            <a class="btn btn-info" th:href="@{/carer/list}">Carer List</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
