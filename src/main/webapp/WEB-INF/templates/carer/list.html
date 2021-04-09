@@ -17,9 +17,8 @@
                 <th>Last Name</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Show</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>Rating</th>
+                <th>Services</th>
             </tr>
             <tr th:each="carer : ${carers}">
                 <td th:text="${carer.id}"></td>
@@ -27,9 +26,8 @@
                 <td th:text="${carer.lastName}"></td>
                 <td th:text="${carer.email}"></td>
                 <td th:text="${carer.phone}"></td>
-                <td><a class="btn btn-success" th:href="@{'/carer/' + ${carer.id}}">View</a></td>
-                <td><a class="btn btn-warning" th:href="@{'/carer/' + ${carer.id} + '/edit'}">Edit</a></td>
-                <td><a class="btn btn-danger" th:href="@{'/carer/' + ${carer.id} + '/delete'}">Delete</a></td>
+                <td th:text="${carer.rating}"></td>
+                <td th:text="${carer.serviceCounter}"></td>
             </tr>
         </table>
 

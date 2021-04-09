@@ -5,6 +5,8 @@ import javax.validation.constraints.*;
 public class CarerDto {
 
     private Integer id;
+    private int rating;
+    private int serviceCounter;
 
     @NotNull(message = "First name is mandatory")
     @NotBlank(message = "First name is mandatory")
@@ -23,9 +25,26 @@ public class CarerDto {
     @NotBlank(message = "Email is mandatory")
     private String email;
 
+
     @Pattern(regexp = "^\\+?[0-9]*$", message = "Phone number contains invalid characters")
     @Size(min = 9, max = 16)
     private String phone;
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public int getServiceCounter() {
+        return serviceCounter;
+    }
+
+    public void setServiceCounter(int serviceCounter) {
+        this.serviceCounter = serviceCounter;
+    }
 
     public Integer getId() {
         return id;

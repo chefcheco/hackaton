@@ -18,6 +18,8 @@ public class CarerToCarerDto extends AbstractConverter<Carer, CarerDto> {
         carerDto.setAge(carer.getAge());
         carerDto.setEmail(carer.getEmail());
         carerDto.setPhone(carer.getPhone());
+        carerDto.setRating(carer.getRating());
+        carerDto.setServiceCounter(carer.getServiceCounter());
 
 
         return carerDto;

@@ -27,6 +27,8 @@ public class CarerDtoToCarer implements Converter<CarerDto, Carer> {
         carer.setAge(carerDto.getAge());
         carer.setEmail(carerDto.getEmail());
         carer.setPhone(carerDto.getPhone());
+        carer.setRating(carerDto.getRating());
+        carer.setServiceCounter(carerDto.getServiceCounter());
 
         return carer;
     }
