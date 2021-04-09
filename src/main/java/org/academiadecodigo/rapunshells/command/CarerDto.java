@@ -11,10 +11,15 @@ public class CarerDto {
     @Size(min = 3, max = 64)
     private String firstName;
 
-    @NotNull(message = "First name is mandatory")
-    @NotBlank(message = "First name is mandatory")
+    @NotNull(message = "Last name is mandatory")
+    @NotBlank(message = "Last name is mandatory")
     @Size(min = 3, max = 64)
     private String lastName;
+
+    @NotNull(message = "Last name is mandatory")
+    @NotBlank(message = "Last name is mandatory")
+    @Size(min = 3, max = 64)
+    private int age;
 
     @Email
     @NotBlank(message = "Email is mandatory")
@@ -46,6 +51,14 @@ public class CarerDto {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public String getEmail() {

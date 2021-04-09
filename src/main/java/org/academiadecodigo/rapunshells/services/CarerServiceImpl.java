@@ -46,5 +46,7 @@ public class CarerServiceImpl implements CarerService {
     public List<Carer> list() {
         return carerDao.findAll();
     }
+
+
 }
 
